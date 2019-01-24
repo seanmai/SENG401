@@ -1,0 +1,51 @@
+.contact-form input{
+    display: block;
+    margin-bottom: 5px;
+}
+.map-container{
+    position: relative;
+}
+#map{
+    width: 720px;
+    height: 360px;
+    position: absolute;
+}
+.city{
+    height: 3px;
+    width: 3px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 10;
+    background: white;
+}
+#calgary{
+    top: 76px;
+    left: 132px;
+}
+#edmonton{
+    top: 72px;
+    left: 134px;
+}
+.description{
+    width: 100%;
+    height:150px
+}
+.description img{
+    height: 150px;
+    width: 150px;
+    float: left;
+
+}
+.heading {
+    width: 100%;
+    height: 50px;
+    text-transform: capitalize;
+}
+.map-description{
+    height: 360px;
+    margin-left: 720px;
+    width: 180px;
+    display: inline-block;
+    padding-left: 10px;
+    overflow: auto;
+}
