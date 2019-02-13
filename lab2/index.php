@@ -13,17 +13,20 @@
         </div>
         <div class="form-container">
             <h4>Coordinate Form:</h4>
-            <form class="" action="lab2-form.php" method="POST">
+            <!-- <form class="" action="lab2-form.php" method="POST"> -->
+            <form class="" action="" onsubmit="return ajaxFormSubmit(); return false;" method="GET">
                 <div class="">
-                    Latitude: <input type="text" name="latitude1" value="">
-                    Longitude: <input type="text" name="longitude1" value="">
+                    Latitude: <input id="latitude1" type="text" name="latitude1" value="">
+                    Longitude: <input id="longitude1" type="text" name="longitude1" value="">
                 </div>
                 <div class="">
-                    Latitude: <input type="text" name="latitude2" value="">
-                    Longitude: <input type="text" name="longitude2" value="">
+                    Latitude: <input id="latitude2" type="text" name="latitude2" value="">
+                    Longitude: <input id="longitude2" type="text" name="longitude2" value="">
                 </div>
                 <input type="submit" name="" value="Submit" style="display: block">
             </form>
+            <div id="form-response">
+            </div>
         </div>
     </body>
 </html>

@@ -1,8 +1,8 @@
 <?php
-$latitude1 = (float)$_POST["latitude1"];
-$longitude1 = (float)$_POST["longitude1"];
-$latitude2 = (float)$_POST["latitude2"];
-$longitude2 = (float)$_POST["longitude2"];
+$latitude1 = (float)$_REQUEST["latitude1"];
+$longitude1 = (float)$_REQUEST["longitude1"];
+$latitude2 = (float)$_REQUEST["latitude2"];
+$longitude2 = (float)$_REQUEST["longitude2"];
 if((!empty($latitude1) && is_real($latitude1) && !empty($longitude1) && is_real($longitude1)) && (!empty($latitude2) && is_real($latitude2) && !empty($longitude2) && is_real($longitude2))){
     if(($latitude1 <= 90 && $latitude1 >= -90 && $longitude1 <= 180 && $longitude1 >= -180) && ($latitude2 <= 90 && $latitude2 >= -90 && $longitude2 <= 180 && $longitude2 >= -180)){
         $quadrant1 = getQuadrant($latitude1, $longitude1);
